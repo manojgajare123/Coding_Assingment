@@ -1,0 +1,15 @@
+package com.masai.Service;
+
+import java.util.List;
+
+import com.masai.Exception.MyApiException;
+import com.masai.model.myapi;
+
+public interface ApiService {
+	public myapi createApi(myapi obj);
+	public List<myapi> getApiByCategories() throws MyApiException;
+	public List<myapi> getApiByHealth() throws MyApiException;
+	public myapi getSearchByRandom() throws MyApiException;
+	public List<String> getApiBySearch(String des) throws MyApiException;
+	
+}

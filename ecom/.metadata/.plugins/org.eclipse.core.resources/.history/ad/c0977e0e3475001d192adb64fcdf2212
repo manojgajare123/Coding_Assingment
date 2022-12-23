@@ -1,0 +1,28 @@
+package com.masai.Controller;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.masai.Service.ApiServiceImpl;
+import com.masai.model.myapi;
+
+@RestController
+public class MyApiController {
+	
+	@Autowired
+	ApiServiceImpl service;
+	
+	@PostMapping("/create")
+    public ResponseEntity<myapi> createCustomer(@RequestBody myapi obj){
+
+        myapi api = service.createApi(obj);
+        return new ResponseEntity<myapi>(api,HttpStatus.OK);
+
+
+    }
+}

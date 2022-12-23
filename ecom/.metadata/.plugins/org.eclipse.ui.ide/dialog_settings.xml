@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="installedFeatures">
+		<item value="com.ianbrandt.tools.m2e.mdp.feature:0.0.4.201409291703"/>
+		<item value="net.mihai-nita.ansicon:1.4.7.202207301915"/>
+		<item value="org.eclipse.buildship:3.1.6.v20220511-1359"/>
+		<item value="org.eclipse.egit.gitflow.feature:6.3.0.202209071007-r"/>
+		<item value="org.eclipse.egit:6.3.0.202209071007-r"/>
+		<item value="org.eclipse.emf.common:2.27.0.v20220817-1401"/>
+		<item value="org.eclipse.emf.ecore:2.29.0.v20220817-1401"/>
+		<item value="org.eclipse.epp.mpc:1.10.0.v20220502-0731"/>
+		<item value="org.eclipse.help:2.3.1100.v20220831-1800"/>
+		<item value="org.eclipse.jdt:3.18.1300.v20220831-1800"/>
+		<item value="org.eclipse.jgit.gpg.bc:6.3.0.202209071007-r"/>
+		<item value="org.eclipse.jgit.http.apache:6.3.0.202209071007-r"/>
+		<item value="org.eclipse.jgit.lfs:6.3.0.202209071007-r"/>
+		<item value="org.eclipse.jgit.ssh.apache:6.3.0.202209071007-r"/>
+		<item value="org.eclipse.jgit:6.3.0.202209071007-r"/>
+		<item value="org.eclipse.justj.openjdk.hotspot.jre.full:17.0.3.v20220515-1416"/>
+		<item value="org.eclipse.m2e.feature:2.0.5.20220912-1211"/>
+		<item value="org.eclipse.mylyn.wikitext.editors_feature:3.0.42.202201072301"/>
+		<item value="org.eclipse.pde:3.14.1300.v20220831-1800"/>
+		<item value="org.eclipse.platform:4.25.0.v20220831-1800"/>
+		<item value="org.eclipse.rcp:4.25.0.v20220831-1800"/>
+		<item value="org.eclipse.tm.terminal.connector.ssh.feature:10.7.1.202208160035"/>
+		<item value="org.eclipse.tm.terminal.control.feature:10.7.1.202208160035"/>
+		<item value="org.eclipse.tm.terminal.feature:10.7.1.202208160035"/>
+		<item value="org.eclipse.tm.terminal.view.feature:10.7.1.202208160035"/>
+		<item value="org.eclipse.userstorage:1.2.0.v20210517-0327"/>
+	</list>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\care point\Desktop\Mini Project"/>
+			<item value="C:\Users\care point\Desktop\Ecommerce"/>
+		</list>
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="429"/>
+		<item key="DIALOG_Y_ORIGIN" value="8"/>
+		<item key="DIALOG_WIDTH" value="525"/>
+		<item key="DIALOG_HEIGHT" value="580"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

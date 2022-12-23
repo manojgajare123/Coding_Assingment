@@ -1,0 +1,62 @@
+package com.masai.Controller;
+
+
+import java.util.List; 
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.masai.Exception.MyApiException;
+import com.masai.Service.ApiServiceImpl;
+import com.masai.model.Myapi;
+
+@RequestMapping("/home")
+@RestController
+public class MyApiController {
+	
+	@Autowired
+	ApiServiceImpl service;
+	
+	@PostMapping("/create")
+    public ResponseEntity<Myapi> createApi(@RequestBody Myapi obj){
+
+        Myapi api = service.createApi(obj);
+        return new ResponseEntity<Myapi>(api,HttpStatus.OK);
+
+    }
+    
+    @GetMapping("/category")
+    public ResponseEntity<List<Myapi>> getApiByCategories() throws MyApiException{
+    	List<Myapi> list = service.getApiByCategories();
+    	
+    	return new ResponseEntity<List<Myapi>>(list,HttpStatus.OK);
+    }
+    
+    @GetMapping("/health")
+    public ResponseEntity<List<Myapi>> getApiByHealth() throws MyApiException{
+    	List<Myapi> list = service.getApiByHealth();
+    	return new ResponseEntity<List<Myapi>>(list,HttpStatus.OK);
+    }
+    
+    @GetMapping("/random")
+    public ResponseEntity<Myapi> RandomSearchApi() throws MyApiException{
+        Myapi api = service.getApiByRandom();
+        return new ResponseEntity<Myapi>(api,HttpStatus.OK);
+
+    }
+    
+    @GetMapping("/searchbyat")
+    public ResponseEntity<List<String>> searchApiByAt(@RequestParam String des) throws MyApiException{
+        List<String> li = service.getApiBySearch(des);
+        return new ResponseEntity<List<String>>(li,HttpStatus.OK);
+
+    }
+    
+}

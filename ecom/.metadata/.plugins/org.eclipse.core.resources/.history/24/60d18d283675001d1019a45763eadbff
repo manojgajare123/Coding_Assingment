@@ -1,0 +1,43 @@
+package com.masai.Service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.masai.Repository.ApiDao;
+import com.masai.model.myapi;
+
+@Service
+public class ApiServiceImpl implements ApiService {
+	
+	@Autowired
+	private ApiDao adao;
+	
+	
+	@Override
+	public myapi createApi(myapi obj) {
+		
+		return adao.save(obj);
+		
+	}
+
+	@Override
+	public List<myapi> getByCategories() {
+		List<myapi> list= ApiDao.findAll
+		return null;
+	}
+
+	@Override
+	public List<myapi> getByHealth() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<myapi> getByRandom() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

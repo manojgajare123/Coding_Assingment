@@ -1,0 +1,71 @@
+package com.masai.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class myapi {
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private Integer id;
+	
+	private String Title;
+	private String Description;
+	private String Auth;
+	private Boolean https;
+	private String Core;
+	private String Category;
+	
+	public myapi(String title, String description, String auth, Boolean https, String core, String category) {
+		super();
+		Title = title;
+		Description = description;
+		Auth = auth;
+		this.https = https;
+		Core = core;
+		Category = category;
+	}
+	public myapi() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public String getTitle() {
+		return Title;
+	}
+	public void setTitle(String title) {
+		Title = title;
+	}
+	public String getDescription() {
+		return Description;
+	}
+	public void setDescription(String description) {
+		Description = description;
+	}
+	public String getAuth() {
+		return Auth;
+	}
+	public void setAuth(String auth) {
+		Auth = auth;
+	}
+	public Boolean getHttps() {
+		return https;
+	}
+	public void setHttps(Boolean https) {
+		this.https = https;
+	}
+	public String getCore() {
+		return Core;
+	}
+	public void setCore(String core) {
+		Core = core;
+	}
+	public String getCategory() {
+		return Category;
+	}
+	public void setCategory(String category) {
+		Category = category;
+	}
+	
+}

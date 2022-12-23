@@ -1,0 +1,12 @@
+package com.masai.Service;
+
+import java.util.List;
+
+import com.masai.model.myapi;
+
+public interface ApiService {
+	public myapi createApi(myapi obj);
+	public List<myapi> getByCategories();
+	public List<myapi> getByHealth();
+	public myapi getByRandom();
+}
