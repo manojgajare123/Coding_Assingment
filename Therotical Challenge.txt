@@ -1,0 +1,41 @@
+3) Question: what are the key things you would consider when creating/consuming an API
+       to ensure that it is secure and reliable?
+Ans:-
+1) Authentication
+2) Authorization
+3) Spring Security
+4) Data validation
+5) User Validation
+
+
+
+Theoretical Challenge
+
+//first we import the file using the following code 
+public static void main(String [] args){
+// this line import file from our system 
+	List<Data> list= readCsvFile("file.csv");
+
+}
+public static List<Data> readCsvFile(String file){
+// this line get the data from the file
+   	Path source = Paths.get(file);
+ // this line reads the data and get their ASCII values
+   	BufferReader br = Files.newBufferedReader(source,Standard.Charsets.ASCII);
+ // this line reads the data line by line
+   	String line = br.readLine();
+// this line stores the data until the last line 
+   	while(line!= null){
+   	String [] arr = line.split(",");
+   	}
+}
+
+//After the reading code we have got the following issues.
+// 1. there might be a chance of circular dependency error because in the formula A is dependent on C and C is 
+//dependent on A so we use the setter dependency method to solve this problem.
+
+
+
+
+
+
